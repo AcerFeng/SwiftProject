@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6pM-Ow-zMe">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="C7b-uc-41b">
+            <objects>
+                <viewController id="6pM-Ow-zMe" customClass="ViewController" customModule="RandomColorization" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5VO-aV-Kzn"/>
+                        <viewControllerLayoutGuide type="bottom" id="QUH-py-Io7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lzM-Xu-dvE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeJ-p7-zV6">
+                                <state key="normal" backgroundImage="music play"/>
+                                <connections>
+                                    <action selector="playMusicButtonDidTouch:" destination="6pM-Ow-zMe" eventType="touchUpInside" id="xHI-M1-FrM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="AeJ-p7-zV6" firstAttribute="centerX" secondItem="lzM-Xu-dvE" secondAttribute="centerX" id="6ZH-d4-YJ1"/>
+                            <constraint firstItem="AeJ-p7-zV6" firstAttribute="centerY" secondItem="lzM-Xu-dvE" secondAttribute="centerY" id="jlc-St-6ad"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fIl-wj-f9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-452" y="-508"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="music play" width="148" height="148"/>
+    </resources>
+</document>
