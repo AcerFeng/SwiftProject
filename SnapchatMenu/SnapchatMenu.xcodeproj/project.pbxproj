@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		664D4E221DD9D7D4000756F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664D4E211DD9D7D4000756F2 /* AppDelegate.swift */; };
 		664D4E241DD9D7D4000756F2 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664D4E231DD9D7D4000756F2 /* MasterViewController.swift */; };
-		664D4E261DD9D7D4000756F2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664D4E251DD9D7D4000756F2 /* DetailViewController.swift */; };
 		664D4E291DD9D7D4000756F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 664D4E271DD9D7D4000756F2 /* Main.storyboard */; };
 		664D4E2B1DD9D7D4000756F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664D4E2A1DD9D7D4000756F2 /* Assets.xcassets */; };
 		664D4E2E1DD9D7D4000756F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 664D4E2C1DD9D7D4000756F2 /* LaunchScreen.storyboard */; };
@@ -38,7 +37,6 @@
 		664D4E1E1DD9D7D4000756F2 /* SnapchatMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapchatMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		664D4E211DD9D7D4000756F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		664D4E231DD9D7D4000756F2 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		664D4E251DD9D7D4000756F2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		664D4E281DD9D7D4000756F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		664D4E2A1DD9D7D4000756F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		664D4E2D1DD9D7D4000756F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 			children = (
 				664D4E211DD9D7D4000756F2 /* AppDelegate.swift */,
 				664D4E231DD9D7D4000756F2 /* MasterViewController.swift */,
-				664D4E251DD9D7D4000756F2 /* DetailViewController.swift */,
 				664D4E271DD9D7D4000756F2 /* Main.storyboard */,
 				664D4E2A1DD9D7D4000756F2 /* Assets.xcassets */,
 				664D4E2C1DD9D7D4000756F2 /* LaunchScreen.storyboard */,
@@ -262,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				664D4E261DD9D7D4000756F2 /* DetailViewController.swift in Sources */,
 				664D4E241DD9D7D4000756F2 /* MasterViewController.swift in Sources */,
 				664D4E221DD9D7D4000756F2 /* AppDelegate.swift in Sources */,
 			);
@@ -509,6 +505,7 @@
 				664D4E4A1DD9D7D4000756F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		664D4E4B1DD9D7D4000756F2 /* Build configuration list for PBXNativeTarget "SnapchatMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +514,7 @@
 				664D4E4D1DD9D7D4000756F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		664D4E4E1DD9D7D4000756F2 /* Build configuration list for PBXNativeTarget "SnapchatMenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +523,7 @@
 				664D4E501DD9D7D4000756F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
