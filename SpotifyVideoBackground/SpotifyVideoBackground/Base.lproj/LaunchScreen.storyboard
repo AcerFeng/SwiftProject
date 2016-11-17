@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-secondary-logo" translatesAutoresizingMaskIntoConstraints="NO" id="th2-yf-jQv"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VpT-uW-bJ4">
+                                <color key="backgroundColor" red="0.090196078431372548" green="0.68235294117647061" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="lpf-3z-kf9" kind="show" id="Mze-k0-6Rz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfZ-P1-pbJ">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="BDA-nr-oPm"/>
+                                </constraints>
+                                <state key="normal" title="Sign up"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="th2-yf-jQv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7NO-J9-6OR"/>
+                            <constraint firstItem="OfZ-P1-pbJ" firstAttribute="top" secondItem="VpT-uW-bJ4" secondAttribute="bottom" constant="20" id="JEk-Am-yuv"/>
+                            <constraint firstItem="OfZ-P1-pbJ" firstAttribute="trailing" secondItem="VpT-uW-bJ4" secondAttribute="trailing" id="JKT-dK-8xK"/>
+                            <constraint firstItem="th2-yf-jQv" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="40" id="Phi-Ze-LY1"/>
+                            <constraint firstItem="OfZ-P1-pbJ" firstAttribute="height" secondItem="VpT-uW-bJ4" secondAttribute="height" id="SES-wb-LaT"/>
+                            <constraint firstItem="OfZ-P1-pbJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="28" id="TmQ-QM-Zd5"/>
+                            <constraint firstAttribute="trailing" secondItem="OfZ-P1-pbJ" secondAttribute="trailing" constant="28" id="U3g-K9-G45"/>
+                            <constraint firstItem="OfZ-P1-pbJ" firstAttribute="leading" secondItem="VpT-uW-bJ4" secondAttribute="leading" id="e8p-gt-SlT"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="OfZ-P1-pbJ" secondAttribute="bottom" constant="20" id="r2B-H7-cf9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135.19999999999999" y="185.75712143928038"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hpa-QF-rol">
+            <objects>
+                <viewController id="lpf-3z-kf9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Byh-zg-dXQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ddt-is-L0M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dK5-MX-xVR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ambience-1" translatesAutoresizingMaskIntoConstraints="NO" id="2iO-BE-gVD"/>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BNH-qC-Gnp">
+                                <frame key="frameInset" minY="54" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Welcome" id="NTt-mu-VdU"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2iO-BE-gVD" firstAttribute="leading" secondItem="dK5-MX-xVR" secondAttribute="leading" id="6Hw-gZ-5v8"/>
+                            <constraint firstItem="Ddt-is-L0M" firstAttribute="top" secondItem="2iO-BE-gVD" secondAttribute="bottom" id="Nb0-Zi-ORe"/>
+                            <constraint firstItem="2iO-BE-gVD" firstAttribute="top" secondItem="dK5-MX-xVR" secondAttribute="top" id="T8A-Iu-zwY"/>
+                            <constraint firstAttribute="trailing" secondItem="2iO-BE-gVD" secondAttribute="trailing" id="wxV-xH-wLc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rsR-Z7-BtN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606" y="190"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ambience-1" width="375" height="667"/>
+        <image name="login-secondary-logo" width="218" height="66"/>
+    </resources>
+</document>
