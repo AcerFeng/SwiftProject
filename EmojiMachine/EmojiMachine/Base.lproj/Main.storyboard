@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="U6l-75-JIz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3W2-Lc-IIf">
+            <objects>
+                <viewController id="U6l-75-JIz" customClass="ViewController" customModule="EmojiMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6hw-A6-Fv4"/>
+                        <viewControllerLayoutGuide type="bottom" id="hnn-wn-wth"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z3f-VG-b58">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hyperspace" translatesAutoresizingMaskIntoConstraints="NO" id="NUR-wl-hkf"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFR-DT-jVS">
+                                <connections>
+                                    <outlet property="dataSource" destination="U6l-75-JIz" id="IoV-XQ-Hhb"/>
+                                    <outlet property="delegate" destination="U6l-75-JIz" id="0a1-JH-H0v"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaZ-ns-MFH">
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Orl-O7-fdd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="27"/>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="goButtonDidTouch:" destination="U6l-75-JIz" eventType="touchUpInside" id="anM-Bn-r6C"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ca-79-2Bi">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UFR-DT-jVS" firstAttribute="centerY" secondItem="Z3f-VG-b58" secondAttribute="centerY" id="8N9-vq-yVi"/>
+                            <constraint firstItem="RaZ-ns-MFH" firstAttribute="top" secondItem="9ca-79-2Bi" secondAttribute="bottom" constant="50" id="CKb-nh-IHg"/>
+                            <constraint firstItem="hnn-wn-wth" firstAttribute="top" secondItem="NUR-wl-hkf" secondAttribute="bottom" id="L48-eU-1Gk"/>
+                            <constraint firstItem="9ca-79-2Bi" firstAttribute="top" secondItem="UFR-DT-jVS" secondAttribute="bottom" constant="50" id="URs-kR-qrr"/>
+                            <constraint firstItem="NUR-wl-hkf" firstAttribute="leading" secondItem="Z3f-VG-b58" secondAttribute="leading" id="bJ7-cx-fZZ"/>
+                            <constraint firstItem="NUR-wl-hkf" firstAttribute="top" secondItem="Z3f-VG-b58" secondAttribute="top" id="chn-Du-edy"/>
+                            <constraint firstAttribute="trailing" secondItem="RaZ-ns-MFH" secondAttribute="trailing" constant="30" id="csg-26-cck"/>
+                            <constraint firstItem="RaZ-ns-MFH" firstAttribute="leading" secondItem="Z3f-VG-b58" secondAttribute="leading" constant="30" id="dpi-Tq-JOA"/>
+                            <constraint firstItem="9ca-79-2Bi" firstAttribute="centerX" secondItem="Z3f-VG-b58" secondAttribute="centerX" id="jw8-uH-doZ"/>
+                            <constraint firstItem="UFR-DT-jVS" firstAttribute="centerX" secondItem="Z3f-VG-b58" secondAttribute="centerX" id="mil-kO-mo6"/>
+                            <constraint firstAttribute="trailing" secondItem="NUR-wl-hkf" secondAttribute="trailing" id="mte-Fi-gmT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emojiPickerView" destination="UFR-DT-jVS" id="LAC-TJ-Z0r"/>
+                        <outlet property="resultLabel" destination="9ca-79-2Bi" id="qhf-N4-mIW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p4V-We-GHP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-314" y="-135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hyperspace" width="621" height="1104"/>
+    </resources>
+</document>
