@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		665B2EC11DE88BD200917C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665B2EC01DE88BD200917C33 /* AppDelegate.swift */; };
+		665B2ECA1DE88BD200917C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665B2EC81DE88BD200917C33 /* Main.storyboard */; };
+		665B2ECC1DE88BD200917C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 665B2ECB1DE88BD200917C33 /* Assets.xcassets */; };
+		665B2ECF1DE88BD200917C33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665B2ECD1DE88BD200917C33 /* LaunchScreen.storyboard */; };
+		665B2EDA1DE88BD200917C33 /* TumbirMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665B2ED91DE88BD200917C33 /* TumbirMenuTests.swift */; };
+		665B2EE51DE88BD200917C33 /* TumbirMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665B2EE41DE88BD200917C33 /* TumbirMenuUITests.swift */; };
+		665B2EF91DE8A21C00917C33 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665B2EF81DE8A21C00917C33 /* MainViewController.swift */; };
+		665B2EFB1DE8A23800917C33 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665B2EFA1DE8A23800917C33 /* MenuViewController.swift */; };
+		665B2EFD1DE8A29F00917C33 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665B2EFC1DE8A29F00917C33 /* MenuTransitionManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		665B2ED61DE88BD200917C33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 665B2EB51DE88BD200917C33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 665B2EBC1DE88BD200917C33;
+			remoteInfo = TumbirMenu;
+		};
+		665B2EE11DE88BD200917C33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 665B2EB51DE88BD200917C33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 665B2EBC1DE88BD200917C33;
+			remoteInfo = TumbirMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		665B2EBD1DE88BD200917C33 /* TumbirMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumbirMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		665B2EC01DE88BD200917C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		665B2EC91DE88BD200917C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		665B2ECB1DE88BD200917C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		665B2ECE1DE88BD200917C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		665B2ED01DE88BD200917C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		665B2ED51DE88BD200917C33 /* TumbirMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TumbirMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		665B2ED91DE88BD200917C33 /* TumbirMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumbirMenuTests.swift; sourceTree = "<group>"; };
+		665B2EDB1DE88BD200917C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		665B2EE01DE88BD200917C33 /* TumbirMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TumbirMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		665B2EE41DE88BD200917C33 /* TumbirMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumbirMenuUITests.swift; sourceTree = "<group>"; };
+		665B2EE61DE88BD200917C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		665B2EF81DE8A21C00917C33 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		665B2EFA1DE8A23800917C33 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		665B2EFC1DE8A29F00917C33 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		665B2EBA1DE88BD200917C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		665B2ED21DE88BD200917C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		665B2EDD1DE88BD200917C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		665B2EB41DE88BD200917C33 = {
+			isa = PBXGroup;
+			children = (
+				665B2EBF1DE88BD200917C33 /* TumbirMenu */,
+				665B2ED81DE88BD200917C33 /* TumbirMenuTests */,
+				665B2EE31DE88BD200917C33 /* TumbirMenuUITests */,
+				665B2EBE1DE88BD200917C33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		665B2EBE1DE88BD200917C33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				665B2EBD1DE88BD200917C33 /* TumbirMenu.app */,
+				665B2ED51DE88BD200917C33 /* TumbirMenuTests.xctest */,
+				665B2EE01DE88BD200917C33 /* TumbirMenuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		665B2EBF1DE88BD200917C33 /* TumbirMenu */ = {
+			isa = PBXGroup;
+			children = (
+				665B2EC01DE88BD200917C33 /* AppDelegate.swift */,
+				665B2EC81DE88BD200917C33 /* Main.storyboard */,
+				665B2ECB1DE88BD200917C33 /* Assets.xcassets */,
+				665B2ECD1DE88BD200917C33 /* LaunchScreen.storyboard */,
+				665B2ED01DE88BD200917C33 /* Info.plist */,
+				665B2EF81DE8A21C00917C33 /* MainViewController.swift */,
+				665B2EFA1DE8A23800917C33 /* MenuViewController.swift */,
+				665B2EFC1DE8A29F00917C33 /* MenuTransitionManager.swift */,
+			);
+			path = TumbirMenu;
+			sourceTree = "<group>";
+		};
+		665B2ED81DE88BD200917C33 /* TumbirMenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				665B2ED91DE88BD200917C33 /* TumbirMenuTests.swift */,
+				665B2EDB1DE88BD200917C33 /* Info.plist */,
+			);
+			path = TumbirMenuTests;
+			sourceTree = "<group>";
+		};
+		665B2EE31DE88BD200917C33 /* TumbirMenuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				665B2EE41DE88BD200917C33 /* TumbirMenuUITests.swift */,
+				665B2EE61DE88BD200917C33 /* Info.plist */,
+			);
+			path = TumbirMenuUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		665B2EBC1DE88BD200917C33 /* TumbirMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 665B2EE91DE88BD200917C33 /* Build configuration list for PBXNativeTarget "TumbirMenu" */;
+			buildPhases = (
+				665B2EB91DE88BD200917C33 /* Sources */,
+				665B2EBA1DE88BD200917C33 /* Frameworks */,
+				665B2EBB1DE88BD200917C33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TumbirMenu;
+			productName = TumbirMenu;
+			productReference = 665B2EBD1DE88BD200917C33 /* TumbirMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		665B2ED41DE88BD200917C33 /* TumbirMenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 665B2EEC1DE88BD200917C33 /* Build configuration list for PBXNativeTarget "TumbirMenuTests" */;
+			buildPhases = (
+				665B2ED11DE88BD200917C33 /* Sources */,
+				665B2ED21DE88BD200917C33 /* Frameworks */,
+				665B2ED31DE88BD200917C33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				665B2ED71DE88BD200917C33 /* PBXTargetDependency */,
+			);
+			name = TumbirMenuTests;
+			productName = TumbirMenuTests;
+			productReference = 665B2ED51DE88BD200917C33 /* TumbirMenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		665B2EDF1DE88BD200917C33 /* TumbirMenuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 665B2EEF1DE88BD200917C33 /* Build configuration list for PBXNativeTarget "TumbirMenuUITests" */;
+			buildPhases = (
+				665B2EDC1DE88BD200917C33 /* Sources */,
+				665B2EDD1DE88BD200917C33 /* Frameworks */,
+				665B2EDE1DE88BD200917C33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				665B2EE21DE88BD200917C33 /* PBXTargetDependency */,
+			);
+			name = TumbirMenuUITests;
+			productName = TumbirMenuUITests;
+			productReference = 665B2EE01DE88BD200917C33 /* TumbirMenuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		665B2EB51DE88BD200917C33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = LanFeng;
+				TargetAttributes = {
+					665B2EBC1DE88BD200917C33 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					665B2ED41DE88BD200917C33 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 665B2EBC1DE88BD200917C33;
+					};
+					665B2EDF1DE88BD200917C33 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 665B2EBC1DE88BD200917C33;
+					};
+				};
+			};
+			buildConfigurationList = 665B2EB81DE88BD200917C33 /* Build configuration list for PBXProject "TumbirMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 665B2EB41DE88BD200917C33;
+			productRefGroup = 665B2EBE1DE88BD200917C33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				665B2EBC1DE88BD200917C33 /* TumbirMenu */,
+				665B2ED41DE88BD200917C33 /* TumbirMenuTests */,
+				665B2EDF1DE88BD200917C33 /* TumbirMenuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		665B2EBB1DE88BD200917C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				665B2ECF1DE88BD200917C33 /* LaunchScreen.storyboard in Resources */,
+				665B2ECC1DE88BD200917C33 /* Assets.xcassets in Resources */,
+				665B2ECA1DE88BD200917C33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		665B2ED31DE88BD200917C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		665B2EDE1DE88BD200917C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		665B2EB91DE88BD200917C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				665B2EC11DE88BD200917C33 /* AppDelegate.swift in Sources */,
+				665B2EFD1DE8A29F00917C33 /* MenuTransitionManager.swift in Sources */,
+				665B2EFB1DE8A23800917C33 /* MenuViewController.swift in Sources */,
+				665B2EF91DE8A21C00917C33 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		665B2ED11DE88BD200917C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				665B2EDA1DE88BD200917C33 /* TumbirMenuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		665B2EDC1DE88BD200917C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				665B2EE51DE88BD200917C33 /* TumbirMenuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		665B2ED71DE88BD200917C33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 665B2EBC1DE88BD200917C33 /* TumbirMenu */;
+			targetProxy = 665B2ED61DE88BD200917C33 /* PBXContainerItemProxy */;
+		};
+		665B2EE21DE88BD200917C33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 665B2EBC1DE88BD200917C33 /* TumbirMenu */;
+			targetProxy = 665B2EE11DE88BD200917C33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		665B2EC81DE88BD200917C33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				665B2EC91DE88BD200917C33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		665B2ECD1DE88BD200917C33 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				665B2ECE1DE88BD200917C33 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		665B2EE71DE88BD200917C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		665B2EE81DE88BD200917C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		665B2EEA1DE88BD200917C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TumbirMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qlf.www.TumbirMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		665B2EEB1DE88BD200917C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TumbirMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qlf.www.TumbirMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		665B2EED1DE88BD200917C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TumbirMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qlf.www.TumbirMenuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TumbirMenu.app/TumbirMenu";
+			};
+			name = Debug;
+		};
+		665B2EEE1DE88BD200917C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TumbirMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qlf.www.TumbirMenuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TumbirMenu.app/TumbirMenu";
+			};
+			name = Release;
+		};
+		665B2EF01DE88BD200917C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TumbirMenuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qlf.www.TumbirMenuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TumbirMenu;
+			};
+			name = Debug;
+		};
+		665B2EF11DE88BD200917C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TumbirMenuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qlf.www.TumbirMenuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TumbirMenu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		665B2EB81DE88BD200917C33 /* Build configuration list for PBXProject "TumbirMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				665B2EE71DE88BD200917C33 /* Debug */,
+				665B2EE81DE88BD200917C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		665B2EE91DE88BD200917C33 /* Build configuration list for PBXNativeTarget "TumbirMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				665B2EEA1DE88BD200917C33 /* Debug */,
+				665B2EEB1DE88BD200917C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		665B2EEC1DE88BD200917C33 /* Build configuration list for PBXNativeTarget "TumbirMenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				665B2EED1DE88BD200917C33 /* Debug */,
+				665B2EEE1DE88BD200917C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		665B2EEF1DE88BD200917C33 /* Build configuration list for PBXNativeTarget "TumbirMenuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				665B2EF01DE88BD200917C33 /* Debug */,
+				665B2EF11DE88BD200917C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 665B2EB51DE88BD200917C33 /* Project object */;
+}
